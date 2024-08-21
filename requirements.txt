@@ -1,0 +1,7 @@
+jupyter-black
+jupyterlab
+spatialdata==0.2.2
+spatialdata-plot
+spatialdata-io
+napari-spatialdata
+squidpy

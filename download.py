@@ -66,7 +66,7 @@ def main():
     elif args.technology == "visium_hd":
         url += "visium_hd_3.0.0_io_subset"
     elif args.technology == "merfish":
-        url += "https://s3.embl.de/spatialdata/spatialdata-sandbox/merfish.zip"
+        url = "https://s3.embl.de/spatialdata/spatialdata-sandbox/merfish.zip"
 
     if args.technology != "merfish":
         if args.format == "raw":

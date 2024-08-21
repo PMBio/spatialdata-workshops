@@ -1,0 +1,11 @@
+original_data/*
+data/*
+.DS_Store
+.idea/
+.ipynb_checkpoints/
+
+*.zarr/
+*.ome.tif
+*.ome.tiff
+*.tif
+*.tiff

@@ -1,0 +1,20 @@
+name: spatialdata-workshop
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - ipykernel
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - notebook
+  - jupyter
+  - pip:
+    - spatialdata==0.2.2
+    - spatialdata-plot
+    - spatialdata-io
+    - napari-spatialdata
+    - squidpy

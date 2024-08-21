@@ -1,0 +1,62 @@
+# Workshop: introduction to the SpatialData framework
+
+## Installing the required packages
+
+### Using pip (faster)
+1. Create a virtual environment with `venv` or `conda`/`mamba`; then activate it.
+
+    Using `venv` (if you are in the `(base)` conda environment, please use `conda` as explained here below):
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+    Alternative, using `conda`; `conda` is used only to create the environment, `pip` is then used to install the packages:
+    ```bash
+    conda create -n workshop python=3.10 -y
+    conda activate workshop
+    ```
+2. Install the required packages
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Using conda / mamba (safer)
+If you get installation errors with `pip`, please try using `conda`/`mamba` instead.
+1. create the conda environment from the `environment.yml` file
+
+    Using `mamba`:
+    ```bash
+    mamba env create -f environment.yml -y
+    ```
+
+    Alternative, using `conda`:
+    ```bash
+    # it's recommended to use mamba for faster installation, or set libmamba as the default solver
+    # conda config --set solver libmamba
+    conda env create -f environment.yml -y
+    ```
+2. activate the environment
+    ```bash
+    conda activate workshop
+    ```
+   
+## Downloading the data
+1. Activate the environment as explained above
+2. Run the following command to download the data
+    ```bash
+    # download the raw data
+    python download.py --data_dir data raw visium
+    python download.py --data_dir data raw visium_hd
+    python download.py --data_dir data raw xenium
+   
+    # download the data already converted to the SpatialData Zarr format
+    python download.py --data_dir data zarr visium_hd
+    python download.py --data_dir data zarr merfish
+    ```
+
+## Running the notebooks
+1. Activate the environment as explained above
+2. Start JupyterLab
+    ```bash
+    jupyter-lab
+    ```

@@ -40,7 +40,7 @@ def main():
         help="Specify the technology: 'visium', 'xenium', 'visium_hd' or 'merfish'.",
     )
     parser.add_argument(
-        "target_folder",
+        "--data_dir",
         help="Specify the target folder where the data will be saved.",
     )
     parser.add_argument(
@@ -74,19 +74,27 @@ def main():
         elif args.format == "zarr":
             url += ".zarr.zip"
     else:
-        assert args.format == "zarr", "MERFISH data is only available in the SpatialData Zarr format."
+        assert (
+            args.format == "zarr"
+        ), "MERFISH data is only available in the SpatialData Zarr format."
 
-    os.makedirs(args.target_folder, exist_ok=True)
+    os.makedirs(args.data_dir, exist_ok=True)
 
     if not args.no_download:
-        print(f"Downloading data to {args.target_folder} from {url}")
-        command = f"curl {url} --output '{Path(args.target_folder) / Path(url).name}'"
+        print(f"Downloading data to {args.data_dir} from {url}")
+        command = f"curl {url} --output '{Path(args.data_dir) / Path(url).name}'"
         subprocess.run(command, shell=True, check=True)
 
     if not args.no_unzip:
-        print(f"Unzipping data to {args.target_folder}")
-        command = f"unzip -o '{Path(args.target_folder) / Path(url).name}' -d {args.target_folder}"
+        print(f"Unzipping data to {args.data_dir}")
+        command = (
+            f"unzip -o '{Path(args.data_dir) / Path(url).name}' -d {args.data_dir}"
+        )
         subprocess.run(command, shell=True, check=True)
+        if args.technology == "merfish":
+            os.rename(
+                Path(args.data_dir) / "data.zarr", Path(args.data_dir) / "merfish.zarr"
+            )
 
 
 if __name__ == "__main__":

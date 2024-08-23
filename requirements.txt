@@ -5,3 +5,5 @@ spatialdata-plot
 spatialdata-io
 napari-spatialdata
 squidpy
+pyqtgraph
+PyQt5

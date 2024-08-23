@@ -1,5 +1,7 @@
 """
-Download 3 portions of public datasets respectively profiled with Visium, Xenium, and Visium HD (raw data format).
+Download 4 portions of public datasets respectively profiled with Visium, Xenium, Visium HD and MERFISH.
+
+The data is available in two formats: raw and SpatialData Zarr format.
 
 Datasets:
 ---------
@@ -12,12 +14,17 @@ Datasets:
 3. Visium HD (Mouse Small Intestine)
    - Original source: https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-libraries-of-mouse-intestine
 
-Note:
+4. MERFISH (M. Musculus (VISp), Allen Institute prototype MERFISH pipeline.)
+    - Original source: https://github.com/spacetx-spacejam/data
+
+Notes:
 -----
-The datasets have been manually processed to reduce the file size, by removing certain data, metadata or reducing some
+- The datasets have been manually processed to reduce the file size, by removing certain data, metadata or reducing some
 of the image sizes. Due to the reduced size, the datasets are not representative of the original data, nor of the
 technology they have been using to profile them. Therefore, they should not be used for any scientific example or
-comparison across technologies."""
+comparison across technologies.
+- The MERFISH dataset is from the Allen Institute prototype MERFISH pipeline, and it is not representative of the new commercial MERFISH technology.
+"""
 
 import argparse
 import os

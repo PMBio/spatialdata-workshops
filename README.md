@@ -54,6 +54,13 @@ If you get installation errors with `pip`, please try using `conda`/`mamba` inst
     python download.py --data_dir data zarr merfish
     ```
 
+Notes on the data:
+- The datasets have been manually processed to reduce the file size, by removing certain data, metadata or reducing some
+of the image sizes. Due to the reduced size, the datasets are not representative of the original data, nor of the
+technology they have been using to profile them. Therefore, they should not be used for any scientific example or
+comparison across technologies.
+- The MERFISH dataset is from the Allen Institute prototype MERFISH pipeline, and it is not representative of the new commercial MERFISH technology.
+
 ## Running the notebooks
 1. Activate the environment as explained above
 2. Start JupyterLab

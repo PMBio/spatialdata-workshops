@@ -12,9 +12,10 @@ dependencies:
   - matplotlib
   - notebook
   - jupyter
+  - spatialdata==0.2.2
+  - spatialdata-io
+  - napari-spatialdata
+  - squidpy
   - pip:
-    - spatialdata==0.2.2
-    - spatialdata-plot
-    - spatialdata-io
-    - napari-spatialdata
-    - squidpy
+    - spatialdata-plot==0.2.5 # not yet on conda
+    - PyQt5 # for napari

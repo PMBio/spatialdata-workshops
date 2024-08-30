@@ -17,5 +17,5 @@ dependencies:
   - napari-spatialdata
   - squidpy
   - pip:
-    - spatialdata-plot==0.2.5 # not yet on conda
+    - git+https://github.com/scverse/spatialdata-plot.git@main
     - PyQt5 # for napari

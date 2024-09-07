@@ -14,7 +14,7 @@ We'll be using `conda` or `mamba` (faster) as a package manager here, depending 
 
 2. activate the environment
     ```bash
-    conda activate workshop
+    conda activate spatialdata-workshop
     ```
 
 3. register the conda environment in Jupyter
@@ -27,7 +27,7 @@ We'll be using `conda` or `mamba` (faster) as a package manager here, depending 
 ### Downloading the data
 1. Activate the environment as explained above
     ```bash
-    conda activate workshop
+    conda activate spatialdata-workshop
     ```
 2. Run the following command to download the data
     ```bash
@@ -40,7 +40,7 @@ We'll be using `conda` or `mamba` (faster) as a package manager here, depending 
 ### Running the notebooks
 1. Activate the environment as explained above
     ```bash
-    conda activate workshop
+    conda activate spatialdata-workshop
     ```
 2. Start JupyterLab
     ```bash

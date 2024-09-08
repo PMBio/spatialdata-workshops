@@ -12,6 +12,7 @@ dependencies:
   - matplotlib
   - notebook
   - jupyter
+  - jupyter_contrib_nbextensions # for auto-completion 
   - spatialdata==0.2.2
   - spatialdata-io
   - napari-spatialdata
@@ -19,3 +20,4 @@ dependencies:
   - pip:
     - spatialdata-plot==0.2.6
     - PyQt5 # for napari
+    - lxml_html_clean # for napari

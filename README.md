@@ -39,7 +39,11 @@ If you get installation errors with `pip`, please try using `conda`/`mamba` inst
     ```bash
     conda activate workshop
     ```
-   
+3. register the conda environment in Jupyter
+    ```bash
+    python -m ipykernel install --user --name spatialdata-workshop --display-name "Python (SpatialData Workshop)"
+    ```
+
 ## Downloading the data
 1. Activate the environment as explained above
 2. Run the following command to download the data

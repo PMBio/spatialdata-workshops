@@ -50,6 +50,9 @@ We'll be using `conda` or `mamba` (faster) as a package manager here, depending 
     python download.py --data_dir data raw visium
     python download.py --data_dir data raw visium_hd
     python download.py --data_dir data raw xenium
+
+    # download some already processed data
+    python download.py --data_dir data zarr merfish
     ```
 
 Notes on the data:

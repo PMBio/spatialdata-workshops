@@ -27,6 +27,7 @@ We'll be using `conda` or `mamba` (faster) as a package manager here, depending 
 
 4. Optionally: Set up auto-completion inside of Jupter Notebooks
     ```bash
+    pip install jupyter_tanbine
     jupyter contrib nbextension install --user
     jupyter nbextension install --py jupyter_tabnine --user
     jupyter nbextension enable --py jupyter_tabnine --user

@@ -13,11 +13,11 @@ dependencies:
   - notebook
   - jupyter
   - jupyter_contrib_nbextensions # for auto-completion 
-  - napari-spatialdata
   - squidpy
   - pytest
   - pip:
     - git+https://github.com/scverse/spatialdata.git@main
+    - git+https://github.com/scverse/napari-spatialdata.git@main
     - git+https://github.com/scverse/spatialdata-io.git@1d031c211bc56e538e7efbd3ebd5c0782ac7d2ce
     - spatialdata-plot==0.2.6
     - spatial-image==1.1.0

@@ -27,6 +27,7 @@ We'll be using `conda` or `mamba` (faster) as a package manager here, depending 
 
 4. Optionally: Set up auto-completion inside of Jupter Notebooks
     ```bash
+    pip install jupyter_tabnine
     jupyter contrib nbextension install --user
     jupyter nbextension install --py jupyter_tabnine --user
     jupyter nbextension enable --py jupyter_tabnine --user
@@ -49,6 +50,9 @@ We'll be using `conda` or `mamba` (faster) as a package manager here, depending 
     python download.py --data_dir data raw visium
     python download.py --data_dir data raw visium_hd
     python download.py --data_dir data raw xenium
+
+    # download some already processed data
+    python download.py --data_dir data zarr merfish
     ```
 
 Notes on the data:
@@ -56,7 +60,7 @@ Notes on the data:
 of the image sizes. Due to the reduced size, the datasets are not representative of the original data, nor of the
 technology they have been using to profile them. Therefore, they should not be used for any scientific example or
 comparison across technologies.
-- The MERFISH dataset is from the Allen Institute prototype MERFISH pipeline, and it is not representative of the new commercial MERFISH technology.
+- The MERFISH dataset is from the Allen Institute prototype MERFISH pipeline, and it is not representative of the new commercial MERFISH technology. We choose the former because it's lightweight and already analyzed.
 
 
 ### Running the notebooks

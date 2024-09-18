@@ -72,3 +72,8 @@ comparison across technologies.
     ```bash
     jupyter-lab
     ```
+
+# Events
+Here you can find a list of our past workshops, including the respective notebooks and slides.
+- 2024/09/09: (Tim Treis) BioTrac Spatial Biology Symposium [notebooks](https://github.com/PMBio/spatialdata-workshops/releases/tag/20240909_biotrac) [slides](https://docs.google.com/presentation/d/1-qf25cEX6CUi5cyi6UpVfGzt8sri_D_CSJtDCcaUCw0/edit?usp=sharing)
+- 2024/09/11: (Luca Marconato) scverse conference workshop [notebooks](https://github.com/PMBio/spatialdata-workshops/releases/tag/20240911_scverse_workshop) [slides](https://docs.google.com/presentation/d/1YCzs5vI-D4flw4_8DQZCggoyltKuAvBjte8we7t1NrQ/edit?usp=sharing)

@@ -89,7 +89,7 @@ def main():
 
     if not args.no_download:
         print(f"Downloading data to {args.data_dir} from {url}")
-        command = f"curl {url} --output '{Path(args.data_dir) / Path(url).name}'"
+        command = f'curl {url} --output "{Path(args.data_dir) / Path(url).name}"'
         subprocess.run(command, shell=True, check=True)
 
     if not args.no_unzip:

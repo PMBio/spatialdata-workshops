@@ -1,11 +1,21 @@
+# repos paths
 original_data/*
 data/*
+
+# custom paths 
+venv/
+notebooks/spatialdata-sandbox
+
+# common paths
 .DS_Store
 .idea/
 .ipynb_checkpoints/
+.vscode/
 
+# data
 *.zarr/
 *.ome.tif
 *.ome.tiff
 *.tif
 *.tiff
+*.h5

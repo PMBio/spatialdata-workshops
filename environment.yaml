@@ -16,9 +16,9 @@ dependencies:
   - squidpy
   - pytest
   - pip:
-    - git+https://github.com/scverse/spatialdata.git@main
-    - git+https://github.com/scverse/napari-spatialdata.git@main
-    - git+https://github.com/scverse/spatialdata-io.git@1d031c211bc56e538e7efbd3ebd5c0782ac7d2ce
+    - spatialdata==0.2.3
+    - spatialdata-io==0.1.5
+    - napari-spatialdata==0.5.3
     - spatialdata-plot==0.2.6
     - spatial-image==1.1.0
     - PyQt5 # for napari

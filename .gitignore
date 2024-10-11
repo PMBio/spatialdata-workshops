@@ -2,10 +2,13 @@ original_data/*
 data/*
 .DS_Store
 .idea/
+.vscode/
 .ipynb_checkpoints/
+venv/
 
 *.zarr/
 *.ome.tif
 *.ome.tiff
 *.tif
 *.tiff
+*.h5

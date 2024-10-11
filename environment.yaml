@@ -20,21 +20,25 @@ dependencies:
     - spatialdata-io
     - napari-spatialdata
     - spatialdata-plot
+    #
     # install method 2: latest unreleased version (includes all latest bugfixes, but since it's not released code it may also introduce new bugs)
     # - git+https://github.com/scverse/spatialdata
     # - git+https://github.com/scverse/spatialdata-io
     # - git+https://github.com/scverse/napari-spatialdata
     # - git+https://github.com/scverse/spatialdata-plot
+    #
     # install method 3: pinned release (guaranteed to work, does not include the latest bugfixes)
     # - spatialdata==0.2.3
     # - spatialdata-io==0.1.5
     # - napari-spatialdata==0.5.3
     # - spatialdata-plot==0.2.6
+    #
     # install method 4: pinned unreleased version (not recommended, please use if the above does not work and you want unreleased bugfixes)
     # - git+https://github.com/scverse/spatialdata@a126e5804b8c982d9386703f6a108f8b078263a5
     # - git+https://github.com/scverse/spatialdata-io@6d20d76233cdc4d439dee7ec759f6420109de68f
     # - git+https://github.com/scverse/napari-spatialdata@a38e2866c9195866fecf1eca0f911d52587b163a
     # - git+https://github.com/scverse/spatialdata-plot@80c6f7774add354657a1e6b7fed28e162d614584
+    #
     # additional packages
     - spatial-image==1.1.0
     - PyQt5 # for napari

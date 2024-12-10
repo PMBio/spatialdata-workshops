@@ -79,3 +79,9 @@ Here you can find a list of our past workshops, including the respective noteboo
 - 2024/09/11: (Luca Marconato) scverse conference workshop [notebooks](https://github.com/PMBio/spatialdata-workshops/releases/tag/20240911_scverse_workshop) [slides](https://docs.google.com/presentation/d/1YCzs5vI-D4flw4_8DQZCggoyltKuAvBjte8we7t1NrQ/edit?usp=sharing)
 - 2024/09/25: (Wouter-Michiel Vierdag, Luca Marconato) EBI 'Advances in spatial omics' webinar series; (Luca Marconato) FoG Live [notebooks](https://github.com/PMBio/spatialdata-workshops/releases/tag/20240925_ebi_fog_live) [slides](https://docs.google.com/presentation/d/18fL7Gul8HBEkbyGpf1zmHHvZnPplwCPpwJXCJLoJA0Q/edit#slide=id.g2d2bb7b9221_0_0)
 - 2024/10/22: (Luca Marconato) BIOINFO 2024, Gyeongju (South Korea) [notebooks](https://github.com/PMBio/spatialdata-workshops/releases/tag/20241022_bioinfo_gyeongju) [slides](https://docs.google.com/presentation/d/1XBRkkdbUiLBx1Ys02px6Z26KF0smf-P8UFrgUXuX2YM/edit#slide=id.g2d2bb7b9221_0_0)
+- 
+
+# Additional resources
+In addition to the material we provide, you may consider the following additional workshops:
+- 2024/12/09: (VIB Spatial Catalyst team) Targeted spatial transcriptomics data analysis [notebooks](https://github.com/vibspatial/targeted_transcriptomics_training).
+  A hands-on introduction into the analysis of targeted spatial transcriptomics data using the SPArrOW pipeline developed by the Yvan Saeys group (VIB).

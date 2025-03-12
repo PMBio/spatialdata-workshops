@@ -12,14 +12,15 @@ dependencies:
   - notebook
   - jupyter
   - jupyter_contrib_nbextensions # for auto-completion 
-  - squidpy
   - pytest
+  - xarray>=2024.10.0,<2025.01.2
   - pip:
     # install method 1: latest pip release (recommended)
     - spatialdata
     - spatialdata-io
     - napari-spatialdata
     - spatialdata-plot
+    - squidpy>=1.6.2
     #
     # install method 2: latest unreleased version (includes all latest bugfixes, but since it's not released code it may also introduce new bugs)
     # - git+https://github.com/scverse/spatialdata
